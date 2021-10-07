@@ -24,3 +24,8 @@ Auth::routes();
 Route::get('/home', [
     HomeController::class, 'index'
 ])->name('home');
+
+
+Route::resource('individus', App\Http\Controllers\IndividuController::class);
+
+Route::resource('dokumens', App\Http\Controllers\DokumenController::class);
