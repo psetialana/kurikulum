@@ -29,3 +29,7 @@ Route::get('/home', [
 Route::resource('individus', App\Http\Controllers\IndividuController::class);
 
 Route::resource('dokumens', App\Http\Controllers\DokumenController::class);
+
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});
