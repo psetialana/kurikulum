@@ -13,12 +13,14 @@
         @foreach($dokumens as $dokumen)
             <tr>
                 <td>{{ $dokumen->nomor }}</td>
-            <td>{{ $dokumen->nama }}</td>
-            <td>{{ $dokumen->deskripsi }}</td>
-            <td>{{ $dokumen->file }}</td>
+                <td>{{ $dokumen->nama }}</td>
+                <td>{{ $dokumen->deskripsi }}</td>
                 <td width="120">
                     {!! Form::open(['route' => ['dokumens.destroy', $dokumen->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
+                    <a href="{{ url($dokumen->file) }}" class='btn btn-default btn-xs' download>
+                            <i class="fas fa-download"></i>
+                        </a>
                         <a href="{{ route('dokumens.show', [$dokumen->id]) }}" class='btn btn-default btn-xs'>
                             <i class="far fa-eye"></i>
                         </a>
