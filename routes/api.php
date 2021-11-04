@@ -22,3 +22,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('individus', App\Http\Controllers\API\IndividuAPIController::class);
 
 Route::resource('dokumens', App\Http\Controllers\API\DokumenAPIController::class);
+
+Route::resource('keluargas', App\Http\Controllers\API\KeluargaAPIController::class);

@@ -14,3 +14,11 @@
 </li>
 
 
+<li class="nav-item">
+    <a href="{{ route('keluargas.index') }}"
+       class="nav-link {{ Request::is('keluargas*') ? 'active' : '' }}">
+        <p>Keluargas</p>
+    </a>
+</li>
+
+
