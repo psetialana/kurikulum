@@ -5,6 +5,7 @@
                 <th>Nomor</th>
                 <th>NIK</th>
         <th>Nama</th>
+        <th>Tanggal Lahir</th>
         <th>Peran</th>
                 <th colspan="3">Action</th>
             </tr>
@@ -15,6 +16,7 @@
                 <td>{{ $keluarga->nomor }}</td>
                 <td>{{ $keluarga->individu->nik }}</td>
             <td>{{ $keluarga->individu->nama }}</td>
+            <td>{{ $keluarga->individu->tanggal_lahir }}</td>
             <td>{{ $keluarga->peran }}</td>
                 <td width="120">
                     {!! Form::open(['route' => ['keluargas.destroy', $keluarga->id], 'method' => 'delete']) !!}

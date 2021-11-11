@@ -31,7 +31,8 @@ class Individu extends Model
     public $fillable = [
         'nik',
         'nama',
-        'alamat'
+        'alamat',
+        'tanggal_lahir'
     ];
 
     /**
@@ -43,7 +44,8 @@ class Individu extends Model
         'id' => 'integer',
         'nik' => 'string',
         'nama' => 'string',
-        'alamat' => 'string'
+        'alamat' => 'string',
+        'tanggal_lahir' => 'date'
     ];
 
     /**

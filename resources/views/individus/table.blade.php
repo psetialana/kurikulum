@@ -5,6 +5,7 @@
                 <th>Nik</th>
         <th>Nama</th>
         <th>Alamat</th>
+        <th>Tanggal Lahir</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
@@ -14,6 +15,7 @@
                 <td>{{ $individu->nik }}</td>
             <td>{{ $individu->nama }}</td>
             <td>{{ $individu->alamat }}</td>
+            <td>{{ $individu->tanggal_lahir }}</td>
                 <td width="120">
                     {!! Form::open(['route' => ['individus.destroy', $individu->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
